@@ -1,0 +1,264 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+*{
+    font-family: 'Cairo', sans-serif;
+}
+
+.loader {
+    position: relative;
+    width: 100px;
+    height: 130px;
+    background: #fff;
+    border-radius: 4px;
+  }
+  .loading{
+    position: fixed;
+    z-index: 99999;
+    left: 0 ;
+    bottom: 0 ;
+    top: 0 ;
+    right: 0 ;
+    background-color: rgb(189, 131, 131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .loader:before{
+    content: '';
+    position: absolute;
+    width: 54px;
+    height: 25px;
+    left: 50%;
+    top: 0;
+    background-image:
+    radial-gradient(ellipse at center, #0000 24%,#de3500 25%,#de3500 64%,#0000 65%),
+    linear-gradient(to bottom, #0000 34%,#de3500 35%);
+    background-size: 12px 12px , 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    transform: translate(-50% , -65%);
+    box-shadow: 0 -3px rgba(0, 0, 0, 0.25) inset;
+  }
+ .loader:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 66%;
+    height: 60%;
+    background: linear-gradient(to bottom, #f79577 30%, #0000 31%);
+    background-size: 100% 16px;
+    animation: writeDown 2s ease-out infinite;
+ }
+
+ @keyframes writeDown {
+    0% { height: 0%; opacity: 0;}
+    20%{ height: 0%; opacity: 1;}
+    80% { height: 65%; opacity: 1;}
+    100% { height: 65%; opacity: 0;}
+ }
+ .heart2 {
+    color: #de3500;
+    margin-right: 10px;
+    margin-left: 10px;
+
+
+ }
+ .img{
+    height: 50px;
+ }
+ .myflex{
+    margin-left: 300px;
+  
+ }
+ .text{
+    text-align: left;
+ }
+.menu{
+    background-color: #f79577;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+.menu:hover{
+    color:black;
+}
+.video{
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+.video:hover{
+    color: #f79577 ;
+}
+.bord{
+    border-right: gray 1px solid;
+}
+.roc {
+    display: flex;
+    justify-content: start;
+}
+
+.roc1 {
+    border-right: #aca6a6ad 1px solid;
+    padding: 20px;
+
+}
+
+.roc2 {
+    border-right: #aca6a6ad 1px solid;
+    padding: 20px;
+
+}
+
+.roc3 {
+    padding: 20px;
+
+}
+.red{
+    color: crimson;
+}
+.but{
+    border-radius: 20px;
+    padding: 5px;
+    background-color: crimson;
+    width: 35%;
+    text-align: center;
+    color: #fff;
+}
+.but:hover{
+    color: black;
+}
+.pic{
+    background-image: url(../img/testi-bg.jpg);
+    height: 240px;
+    color: #ffffff;
+    
+}
+.pic_two{
+    background-image: url(../img/reservation-bg.jpg);
+    height: 600px;
+}
+form-style-1 {
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+.form-style-1 label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-style-1 input[type=text],
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea,
+select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+.form-style-1 input[type=text]:focus,
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus,
+.form-style-1 select:focus {
+    -moz-box-shadow: 0 0 8px var(--primarycolor);
+    -webkit-box-shadow: 0 0 8px var(--primarycolor);
+    box-shadow: 0 0 8px var(--primarycolor);
+    border: 1px solid var(--primarycolor);
+}
+
+.form-style-1 .field-divided {
+    width: 49%;
+}
+
+.form-style-1 .field-long {
+    width: 100%;
+}
+
+.form-style-1 .field-select {
+    width: 100%;
+}
+
+.form-style-1 .field-textarea {
+    height: 100px;
+}
+
+.form-style-1 input[type=submit],
+.form-style-1 input[type=button] {
+    background: var(--primarycolor);
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+
+.form-style-1 input[type=submit]:hover,
+.form-style-1 input[type=button]:hover {
+    background: #4691A4;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.form-style-1 .required {
+    color: red;
+}
+
+form {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    width: 40%;
+    /* border:3px solid var(--primarycolor); */
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.myform {
+    background-image: url(../img/reservation-bg.jpg);
+    margin-top: 50px;
+}
+footer{
+    height: auto;
+    background-color: gray;
+}
+.tree{
+    width: 100px;
+}
